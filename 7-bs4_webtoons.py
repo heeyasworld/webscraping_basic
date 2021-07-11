@@ -11,4 +11,6 @@ soup = BeautifulSoup(res.text, "lxml")
 cartoons = soup.find_all("a", attrs={"class": "title"})
 # class 속성이 title인 모든 "a" element를 반환
 for cartoon in cartoons:
-    print(cartoon.get_text())
+    title = cartoon.get_text()
+    link = "https://comic.naver.com" + cartoon["href"]
+    print(title, link)

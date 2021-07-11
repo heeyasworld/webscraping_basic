@@ -42,8 +42,10 @@ total_rank = rank1.find_next_siblings("li")
 print("1", rank1.a.get_text())
 a = 1
 for i in total_rank:
+    title = i.a.get_text()
+    link = "https://comic.naver.com" + i.a["href"]
     a = a + 1
-    print(a, i.a.get_text())
+    print(a, title, link)
 
 # webtoon = soup.find("a", text="이번 생도 잘 부탁해-52화")
 # print(webtoon)
