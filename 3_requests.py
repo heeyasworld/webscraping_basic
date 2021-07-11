@@ -3,6 +3,7 @@ res = requests.get("http://google.com")  # url 가져오기
 res.raise_for_status()
 # 웹스크래핑을 위한 url이 올바르면 그대로 진행
 # 아닐 경우에는 오류나고 진행 불가한 코드
+# 그래서 스크래핑 할 때 기본으로 위의 세 줄 코드로 시작함
 # print("status code :", res.status_code)  # 200이면 정상
 
 print(len(res.text))
