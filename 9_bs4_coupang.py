@@ -42,7 +42,7 @@ for item in items:
         "span", attrs={"class": "rating-total-count"})
     if rate_cnt:
         rate_cnt = rate_cnt.get_text()  # 예. (26)
-        rate_cnt = rate_cnt[1:-1]  # 예. 26
+        rate_cnt = rate_cnt[1:-1]  # 예. 26 슬라이싱
     else:
         print("  <평점 수 없는 상품 제외합니다>")
         continue  # 제외하고 진행
