@@ -13,7 +13,7 @@ f = open(filename, "w", encoding="utf-8-sig", newline="")
 writer = csv.writer(f)
 
 title = "N	종목명	현재가	전일비	등락률	액면가	시가총액	상장주식수	외국인비율	거래량	PER	ROE".split("\t")
-# split("\t") tab으로 구분하 위 title속 문자들이 list로 들어가게 된다
+# split("\t") tab으로 구분해서 위 title속 문자들이 list로 들어가게 된다
 # ["N", "종목명", "현재가"....]
 writer.writerow(title)
 # list 형태로 제일 첫번째 줄에 구분명들 입력 먼저 하기
